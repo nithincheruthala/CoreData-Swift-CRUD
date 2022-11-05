@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75181D222915F030008B8A81 /* MoviesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75181D212915F030008B8A81 /* MoviesListVC.swift */; };
 		7535FCDA291567FC00252720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535FCD9291567FC00252720 /* AppDelegate.swift */; };
 		7535FCDC291567FC00252720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535FCDB291567FC00252720 /* SceneDelegate.swift */; };
-		7535FCDE291567FC00252720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535FCDD291567FC00252720 /* ViewController.swift */; };
 		7535FCE1291567FC00252720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7535FCDF291567FC00252720 /* Main.storyboard */; };
 		7535FCE3291567FD00252720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7535FCE2291567FD00252720 /* Assets.xcassets */; };
 		7535FCE6291567FD00252720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7535FCE4291567FD00252720 /* LaunchScreen.storyboard */; };
+		755C22C729158D1800E62D5E /* MovieCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C22C629158D1800E62D5E /* MovieCategoryVC.swift */; };
+		755C22CA29158E8F00E62D5E /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 755C22C829158E8F00E62D5E /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75181D212915F030008B8A81 /* MoviesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListVC.swift; sourceTree = "<group>"; };
 		7535FCD6291567FC00252720 /* CoreDataSwiftCRUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSwiftCRUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7535FCD9291567FC00252720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7535FCDB291567FC00252720 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7535FCDD291567FC00252720 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7535FCE0291567FC00252720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7535FCE2291567FD00252720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7535FCE5291567FD00252720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7535FCE7291567FD00252720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755C22C629158D1800E62D5E /* MovieCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCategoryVC.swift; sourceTree = "<group>"; };
+		755C22C929158E8F00E62D5E /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		7535FCD8291567FC00252720 /* CoreDataSwiftCRUD */ = {
 			isa = PBXGroup;
 			children = (
+				7535FCEF29156B6A00252720 /* DataModel */,
+				7535FCEE29156B5B00252720 /* Views */,
+				7535FCED29156B4D00252720 /* Controllers */,
 				7535FCD9291567FC00252720 /* AppDelegate.swift */,
 				7535FCDB291567FC00252720 /* SceneDelegate.swift */,
-				7535FCDD291567FC00252720 /* ViewController.swift */,
-				7535FCDF291567FC00252720 /* Main.storyboard */,
 				7535FCE2291567FD00252720 /* Assets.xcassets */,
 				7535FCE4291567FD00252720 /* LaunchScreen.storyboard */,
 				7535FCE7291567FD00252720 /* Info.plist */,
 			);
 			path = CoreDataSwiftCRUD;
+			sourceTree = "<group>";
+		};
+		7535FCED29156B4D00252720 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				755C22C629158D1800E62D5E /* MovieCategoryVC.swift */,
+				75181D212915F030008B8A81 /* MoviesListVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7535FCEE29156B5B00252720 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7535FCDF291567FC00252720 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7535FCEF29156B6A00252720 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				755C22C829158E8F00E62D5E /* DataModel.xcdatamodeld */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7535FCDE291567FC00252720 /* ViewController.swift in Sources */,
+				75181D222915F030008B8A81 /* MoviesListVC.swift in Sources */,
 				7535FCDA291567FC00252720 /* AppDelegate.swift in Sources */,
+				755C22CA29158E8F00E62D5E /* DataModel.xcdatamodeld in Sources */,
+				755C22C729158D1800E62D5E /* MovieCategoryVC.swift in Sources */,
 				7535FCDC291567FC00252720 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +388,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		755C22C829158E8F00E62D5E /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				755C22C929158E8F00E62D5E /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 755C22C929158E8F00E62D5E /* DataModel.xcdatamodel */;
+			name = DataModel.xcdatamodeld;
+			path = ../Controllers/DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7535FCCE291567FC00252720 /* Project object */;
 }
